@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Table Operations</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Dynamic Table Operations</h1>
+
+
+        <div id="message-box"></div>
+
+
+        <input id="search-input" class="search-bar" type="text" placeholder="Search..." />
+
+
+        <div class="table-container">
+            <table id="data-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                  
+                </tbody>
+            </table>
+        </div>
+
+        <div id="modal" class="modal hidden">
+            <div class="modal-content">
+                <h2 id="modal-title">Add Entry</h2>
+                <form id="modal-form">
+                    <input type="text" id="modal-name" placeholder="Name" required>
+                    <input type="email" id="modal-email" placeholder="Email" required>
+                    <button type="submit">Save</button>
+                </form>
+                <button id="close-modal" class="close-modal">Cancel</button>
+            </div>
+        </div>
+
+       
+        <button id="add-entry-btn">Add New Entry</button>
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
